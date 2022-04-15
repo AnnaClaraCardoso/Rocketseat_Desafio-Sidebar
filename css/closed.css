@@ -1,0 +1,28 @@
+.sidebar.close .nav-option-text, 
+.sidebar.close .logo, 
+.sidebar.close .nav-search-option,
+.sidebar.close .info,
+.sidebar.close .profile-photo {
+  display: none;
+}
+
+.sidebar.close {
+  width: calc(var(--sidebar-base-width)*0.312);
+}
+
+.sidebar.close {
+  text-align: center;
+}
+
+.sidebar.close header, .sidebar.close .profile {
+  justify-content: center;
+}
+
+.sidebar.close .nav-option, .sidebar-close header, .sidebar-close .profile {
+  height: 48px;
+  width: 48px;
+}
+
+main.close {
+  margin-left: calc(var(--sidebar-base-width)*0.312);
+}
