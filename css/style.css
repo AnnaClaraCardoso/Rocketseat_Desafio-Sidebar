@@ -2,4 +2,106 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+	--light-grey: #dce4e3;
+  --text-color: #084236;
+  --sidebar-base-width: 250px;
+}
+
+.sidebar {
+  width: var(--sidebar-base-width);
+  position: fixed;
+  height: 100vh;
+  background-color: var(--green);
+  transition: all .15s ease-in-out;
+  overflow: hidden;
+}
+
+main {
+  margin-left: var(--sidebar-base-width);
+  transition: all .15s ease-in-out;
+  height: 100vh;
+  background-color: var(--light-grey);
+}
+
+main h1 {
+  padding: 12px;
+  color: var(--text-color);
+}
+
+.sidebar nav ul li {
+  list-style: none;
+}
+
+.sidebar header, .profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-btn, .log-out-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-option-text, .nav-search-option {
+  text-decoration: none;
+  color: var(--text-color);
+  padding-left: 8px;
+}
+
+.nav-option img, .log-out-btn img {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.nav-option, header {
+  padding: 12px;
+  margin: 14px;
+}
+
+.nav-search {
+  display: flex;
+  background-color: var(--light-green);
+  border-radius: 12px;
+}
+
+.nav-search input[type="text"]{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 70px;
+  width: inherit;
+  background-color: var(--light-green);
+  position: fixed;
+  bottom: 0;
+}
+
+.profile {
+  display: flex;
+  vertical-align: middle;
+  width: 100%;
+  padding: 10px;
+}
+
+.profile-photo {
+  background-image: url(/images/photo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
 }
